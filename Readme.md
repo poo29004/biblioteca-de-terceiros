@@ -36,7 +36,7 @@ gradle run --args="POO engtelecom"
 Uma aplicação Java poderia processar um arquivo texto que enviado para essa por meio do redirecionamento da entrada. Por exemplo, o trecho abaixo fará a leitura de todas as linhas do arquivo texto encaminhado e irá imprimir tais linhas:
 
 ```java
-// é necessário fazer o import para import java.util.Scanner;
+import java.util.Scanner;
 public class Teste{
     public static void main(String[] args){
         Scanner entrada = new Scanner(System.in);
