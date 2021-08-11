@@ -87,3 +87,7 @@ javac -cp ../../../libs/algs4.jar:. poo/Principal.java
 # Considerando que estará dentro do diretório src/main/java
 java -cp ../../../libs/algs4.jar:. poo.Principal POO
 ```
+
+## Para atualizar a versão do gradle
+
+Veja documentação oficial que está disponível em https://docs.gradle.org/current/userguide/upgrading_version_7.html
