@@ -6,6 +6,22 @@
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
+
+
+### VisualStudioCode ###
+.vscode/*
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
@@ -222,4 +238,4 @@ gradle-app.setting
 # End of https://www.toptal.com/developers/gitignore/api/java,intellij,gradle,macos,linux,windows
 
 # Não ignore os arquivos JAR contidos dentro do diretório lib
-!libs/*.jar
+!app/libs/*.jar

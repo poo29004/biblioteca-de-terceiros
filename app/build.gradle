@@ -1,0 +1,38 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    // Define a classe principal da aplicação
+    mainClass = 'poo.Principal'
+}
+
+// Definindo o fluxo de entrada padrão quando o projeto for executado
+run {
+    standardInput = System.in
+}
+
+dependencies {
+    
+    // importando arquivo JAR que está dentro do diretório libs
+    implementation files ('libs/algs4-1.0.1.jar')
+
+    // Use JUnit Jupiter for testing.
+    testImplementation libs.junit.jupiter
+
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // This dependency is used by the application.
+    implementation libs.guava
+}
+
+
+
+tasks.named('test') {
+    // Use JUnit Platform for unit tests.
+    useJUnitPlatform()
+}
