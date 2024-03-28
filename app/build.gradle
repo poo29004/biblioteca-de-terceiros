@@ -4,6 +4,13 @@ plugins {
 
 repositories {
     mavenCentral()
+
+    // Para importar bibliotecas que estão no GitHub
+    maven {
+        url 'https://jitpack.io'
+        content { includeGroup "com.github.emersonmello" }
+    }
+
 }
 
 application {
@@ -19,13 +26,16 @@ run {
 dependencies {
     
     // importando arquivo JAR que está dentro do diretório libs
-    implementation files ('libs/algs4-1.0.1.jar')
+    implementation files ('libs/algs4.jar')
+    // Ou comente a linha acima e descomente a linha abaixo para importar 
+    // a biblioteca diretamente do GitHub. O fonte da biblioteca será baixado e compilado antes de ser utilizado.
+    // implementation 'com.github.emersonmello:algs4:latest'
+
+
 
     // Use JUnit Jupiter for testing.
     testImplementation libs.junit.jupiter
-
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-
     // This dependency is used by the application.
     implementation libs.guava
 }

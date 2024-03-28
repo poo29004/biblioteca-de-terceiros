@@ -4,7 +4,7 @@ Nesse repositório tem projeto gradle com Java para demonstrar como usar uma bib
 
 Para o exemplo foi usada a biblioteca [Algs4](https://algs4.cs.princeton.edu/home/) da universidade de Princeton, que está sob licença de software livre [GPL versão 3](https://choosealicense.com/licenses/gpl-3.0).
 
-Dentro do arquivo [build.gradle](app/build.gradle) deve-se incluir a dependência para o arquivo [algs4-1.0.1.jar](app/libs/algs4-1.0.1.jar).
+Dentro do arquivo [build.gradle](app/build.gradle) deve-se incluir a dependência para o arquivo [algs4.jar](app/libs/algs4-1.0.1.jar). No arquivo  [build.gradle](app/build.gradle) também foi deixado um exemplo de como usar o https://jitpack.io para incluir uma dependência de um projeto hospedado no github. Assim, seria possível baixar a biblioteca [algs4.jar](https://github.com/emersonmello/algs4/releases/download/latest/algs4.jar) diretamente do repositório https://github.com/emersonmello/algs4/releases/tag/latest.
 
 ## Como executar esse projeto no terminal usando o gradle
 
@@ -75,13 +75,13 @@ gradle run < aulas.txt
 
 ```bash
 cd app/src/main/java
-javac -cp ../../../libs/algs4-1.0.1.jar:. poo/Principal.java
+javac -cp ../../../libs/algs4.jar:. poo/Principal.java
 ```
 
 ### Executando
 ```bash 
 # Considerando que esteja dentro do diretório src/main/java
-java -cp ../../../libs/algs4-1.0.1.jar:. poo.Principal POO
+java -cp ../../../libs/algs4.jar:. poo.Principal POO
 ```
 
 ## Para atualizar para a última versão do gradle
